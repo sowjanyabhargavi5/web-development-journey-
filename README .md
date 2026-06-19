@@ -1,6 +1,6 @@
-Mark down 
 # web development journey
 welcome to my web development journey repository.
+
 ##Aboout me 
 -2nd year CSE student
 -Learning HTML,CSS,JAVASCRIPT
@@ -12,3 +12,5 @@ welcome to my web development journey repository.
 -learn modern web technologies
 -contribute to open source
 -prepare for internships
+
+#THANKYOU FOR VISITING MY REPOSITORY...!!!
