@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DreamPath AI</title>
+</head>
+
+<body bgcolor="#f5f5f5">
+
+<center>
+
+<h1>DreamPath AI</h1>
+<h3>Student Career Roadmap Generator</h3>
+
+<hr width="50%">
+
+<form>
+
+<label><b>Select Your Career Goal:</b></label>
+
+<br><br>
+
+<select id="career">
+
+<option>AI Engineer</option>
+<option>Web Developer</option>
+<option>Data Scientist</option>
+<option>Cyber Security</option>
+<option>App Developer</option>
+
+</select>
+
+<br><br>
+
+<label><b>Enter Your Skill Level (1-10):</b></label>
+
+<br><br>
+
+<input type="number" id="skill" min="1" max="10">
+
+<br><br>
+
+<button type="button" onclick="generateRoadmap()">
+Generate Roadmap
+</button>
+
+</form>
+
+<br>
+
+<div id="result"></div>
+
+</center>
+
+<script>
+
+function generateRoadmap(){
+
+let career =
+document.getElementById("career").value;
+
+let skill =
+document.getElementById("skill").value;
+
+let roadmap = "";
+
+if(career=="AI Engineer"){
+
+roadmap =
+"<h2>AI Engineer Roadmap</h2>" +
+"<ol>" +
+"<li>Learn Python</li>" +
+"<li>Learn Data Structures</li>" +
+"<li>Learn Machine Learning</li>" +
+"<li>Build AI Projects</li>" +
+"<li>Learn Deep Learning</li>" +
+"<li>Create Portfolio</li>" +
+"</ol>";
+
+}
+
+else if(career=="Web Developer"){
+
+roadmap =
+"<h2>Web Developer Roadmap</h2>" +
+"<ol>" +
+"<li>HTML</li>" +
+"<li>CSS</li>" +
+"<li>JavaScript</li>" +
+"<li>React</li>" +
+"<li>Backend Development</li>" +
+"<li>Deploy Projects</li>" +
+"</ol>";
+
+}
+
+else if(career=="Data Scientist"){
+
+roadmap =
+"<h2>Data Scientist Roadmap</h2>" +
+"<ol>" +
+"<li>Python</li>" +
+"<li>Statistics</li>" +
+"<li>Pandas</li>" +
+"<li>Data Visualization</li>" +
+"<li>Machine Learning</li>" +
+"<li>Projects</li>" +
+"</ol>";
+
+}
+
+else if(career=="Cyber Security"){
+
+roadmap =
+"<h2>Cyber Security Roadmap</h2>" +
+"<ol>" +
+"<li>Networking</li>" +
+"<li>Linux</li>" +
+"<li>Ethical Hacking</li>" +
+"<li>Web Security</li>" +
+"<li>CTF Practice</li>" +
+"<li>Security Projects</li>" +
+"</ol>";
+
+}
+
+else{
+
+roadmap =
+"<h2>App Developer Roadmap</h2>" +
+"<ol>" +
+"<li>Java/Kotlin</li>" +
+"<li>Android Development</li>" +
+"<li>Firebase</li>" +
+"<li>API Integration</li>" +
+"<li>Testing</li>" +
+"<li>Publish App</li>" +
+"</ol>";
+
+}
+
+let score = skill * 10;
+
+document.getElementById("result").innerHTML =
+roadmap +
+"<h3>Career Readiness Score: " +
+score +
+"%</h3>";
+
+}
+
+</script>
+
+</body>
+</html>
